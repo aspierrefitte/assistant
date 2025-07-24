@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assistant Appels à Projet</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background: #f4f4f4; }
+        form { margin-bottom: 20px; }
+        input[type="text"] { width: 70%; padding: 10px; }
+        input[type="submit"] { padding: 10px 20px; }
+        .answer { margin-top: 20px; padding: 10px; background: #fff; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Assistant IA — Réponses aux appels à projet</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Pose ta question ici..." required />
+        <input type="submit" value="Envoyer" />
+    </form>
+    {% if answer %}
+    <div class="answer">
+        <h3>Réponse :</h3>
+        <p>{{ answer }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
