@@ -1,0 +1,7 @@
+flask
+openai
+langchain
+chromadb
+python-dotenv
+PyPDF2
+docx2txt
